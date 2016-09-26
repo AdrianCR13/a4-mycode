@@ -1,0 +1,30 @@
+body {
+	background-color: blue;
+}
+
+#banner {
+	background: linear-gradient(black, blue);
+	margin-top: -10px;
+}
+
+h1 {
+	color: #0000b3;
+	text-align: center;
+}
+
+h2 {
+	color: #009999;
+	text-align: center;
+}
+
+div {
+	text-align: center;
+}
+
+#topPicture, #slideShow {
+	border-style: groove;
+    border-color: white;
+    border-radius: 5px;
+    border-width: 5px;
+    box-shadow: 5px 5px 7px black;
+}
