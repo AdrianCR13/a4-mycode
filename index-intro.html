@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Adrian Castillo Intro Website</title>
+		<script src="js/jquery-3.1.0.js"></script>
+		<script src="js/my-code.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/w3.css" />
+		<link rel="stylesheet" type="text/css" href="CSS/intro.css" >
+	</head>
+
+	<body>
+		<div id="banner">
+			<h1>Welcome!</h1>
+			<h2>Website Created by: Adrian Castillo</h2>
+			<hr />
+		</div>
+
+		<ul class="w3-navbar w3-card-2 w3-light-grey">
+			<li>
+				<a href="http://192.168.1.156/a4mcclendon/">Mr. M</a>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">My Pages <i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="http://www.google.com">Google</a>
+					<a href="http://www.westada.org">West Ada</a>
+					<a href="#">another one</a>
+					<a href="#">and another one</a>
+					<a href="#">the final another one</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">CHS <i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Link 1</a>
+					<a href="#">Link 2</a>
+					<a href="#">Link 3</a>
+					<a href="#">Link 4</a>
+					<a href="#">Link 5</a>
+					<a href="#">Link 6</a>
+					<a href="#">Link 7</a>
+					<a href="#">Link 8</a>
+					<a href="#">Link 9</a>
+					<a href="#">Link 10</a>
+					<a href="#">Link 11</a>
+					<a href="#">Link 12</a>
+					<a href="#">Link 13</a>
+					<a href="#">Link 14</a>
+					<a href="#">Link 15</a>
+					<a href="#">Link 16</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">MHS <i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Andrea D</a>
+					<a href="#">Parker Y</a>
+					<a href="#">Zeke O</a>
+					<a href="#">Kenison S</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">MVHS <i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Carter H</a>
+				</div>
+			</li>
+			<li class="w3-dropdown-hover w3-hover-orange">
+				<a class="w3-hover-orange" href="#">RMHS <i class="fa fa-caret-down"> </i></a>
+				<div class="w3-dropdown-content w3-white w3-card-4">
+					<a href="#">Adrian C</a>
+					<a href="#">Hunter F</a>
+					<a href="#">James G</a>
+					<a href="#">Alejandro E</a>
+					<a href="#">Kaden D</a>
+				</div>
+			</li>
+		</ul>
+
+		<p>
+			<i class="fa fa-spinner w3-spin" style="font-size: 64px"> </i>
+		</p>
+		<div id="firstPicture">
+			<h1>Click here to see my favorite picture of football!</h1>
+			<img id="topPicture" src="Images/fatfootball.jpeg" alt="fatfootball.jpg" >
+		</div>
+		<br>
+
+		<div id="slideShow" class="w3-content" style="max-width:600px;position:relative">
+
+			<div class="w3-display-container mySlides">
+				<img src="Images/ManCity.jpeg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					This is Manchester City!
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="Images/StreetFootball.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					I love football (soccer)!
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="Images/NikeNeymarXJordan.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					I like my football cleats!
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="Images/Overwatch.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					I like to play Overwatch!
+				</div>
+			</div>
+
+			<div class="w3-display-container mySlides">
+				<img src="Images/SelecionDeMexico.jpg" style="width:100%">
+				<div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+					I support my Mexico National Team
+				</div>
+			</div>
+
+			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;left:0" onclick="plusDivs(-1)">[</a>
+			<a class="w3-btn-floating w3-hover-dark-grey" style="position:absolute;top:45%;right:0" onclick="plusDivs(1)">]</a>
+
+		</div>
+
+		<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
+
+			function plusDivs(n) {
+				showDivs(slideIndex += n);
+			}
+
+			function showDivs(n) {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				if (n > x.length) {
+					slideIndex = 1
+				}
+				if (n < 1) {
+					slideIndex = x.length
+				}
+				for ( i = 0; i < x.length; i++) {
+					x[i].style.display = "none";
+				}
+				x[slideIndex - 1].style.display = "block";
+			}
+		</script>
+
+		<!-- Practice jq02 -- buttons -->
+
+		<br>
+		<hr>
+		<br>
+
+		<input id="testbutton" type="button" value="push me">
+		<div id="jq02">
+			<h3>This is the <strong>first</strong> line of text for practice</h3>
+			<h3>This is the <strong>second</strong> line of text for practice</h3>
+		</div>
+
+		<h3>This is the <strong>third</strong> line of text for practice</h3>
+		<h3>This is the <strong>fourth</strong> line of text for practice</h3>
+
+		<br>
+		<hr>
+		<br>
+
+	</body>
+
+</html>
