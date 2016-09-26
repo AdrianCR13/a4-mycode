@@ -1,16 +1,13 @@
 #bannerpic {
 	
 	float: right;
-	margin:  25px 100px 10px 10px;
-	border-style: inset;
-	border-width: 7px;
-	border-color: #F44336;
-	padding: 10px;
-	box-shadow: 6px 6px 6px #9900cc;
+    margin: 25px 100px 10px 10px;
+    border-style: inset;
+    border-width: 7px;
+    border-color: white;
+    padding: 10px;
+    box-shadow: 6px 6px 6px #9900cc;
 	
-}
-body{
-	background-color:#00BCD4
 }
 
 .clearfloat {
@@ -21,16 +18,33 @@ body{
 
 #banner {
 	
-	margin-left: 25px;
-	margin-right: 50px;
-	margin-bottom: 25px;
+	color: white;
+	margin: 0 0 0 50px;
+
+}
+
+body	{
+	
+	background-color: #9900ff;
 	
 }
 
-#slideShow {
-	border-style: groove;
-    border-color: white;
-    border-radius: 5px;
-    border-width: 5px;
-    box-shadow: 5px 5px 7px black;
+#aboutme {
+	
+	font-size: 1.5em;
+	background-color: #9900FF;
+	color: white;
+	padding: 20px; 
+	border-radius: 12px;
+}
+	
+#aboutme:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#infoaboutme {
+	color: white;
+	background-color: black;
+	
+	
 }
